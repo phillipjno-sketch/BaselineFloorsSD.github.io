@@ -2,43 +2,35 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Base Line Flooring | 0 Overhead Vinyl Floors</title>
+  <title>Base Line Flooring | Vinyl Floors at Bottom Line Pricing</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Base Line Flooring offers premium 8mm vinyl plank flooring in San Diego with 0 overhead, no minimums, and factory-direct pricing. $5/sq ft special with free installation or 50% off materials. Visit our Kearny Mesa showroom.">
   <style>
     :root {
-      --bg: #0f1115;
-      --bg-light: #181b22;
-      --accent: #f5c451;
-      --accent-soft: rgba(245, 196, 81, 0.12);
-      --text: #ffffff;
-      --muted: #b3b7c5;
-      --card: #1e222b;
-      --border: #2a3040;
-      --success: #67c48b;
-      --font-main: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-        sans-serif;
+      --bg: #ffffff;
+      --bg-alt: #ffffff;
+      --accent: #2a9a63;
+      --accent-soft: rgba(42,154,99,0.1);
+      --text-main: #22252a;
+      --text-muted: #6c7480;
+      --border: #e3e7eb;
+      --shadow-soft: 0 10px 30px rgba(15, 23, 42, 0.05);
+      --font-main: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     }
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
       font-family: var(--font-main);
-      background: radial-gradient(circle at top, #202433 0, #05070c 55%);
-      color: var(--text);
+      background: var(--bg);
+      color: var(--text-main);
       line-height: 1.5;
     }
 
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
+    a { color: inherit; text-decoration: none; }
 
     .page {
-      max-width: 1120px;
+      max-width: 1160px;
       margin: 0 auto;
       padding: 24px 16px 64px;
     }
@@ -48,8 +40,8 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin-bottom: 24px;
-      gap: 12px;
+      padding: 10px 0 6px;
+      gap: 20px;
     }
 
     .logo-wrap {
@@ -58,808 +50,275 @@
       gap: 12px;
     }
 
-    .logo-mark {
-      width: 42px;
-      height: 42px;
-      border-radius: 8px;
-      border: 2px solid var(--accent);
-      display: flex;
-      align-items: flex-end;
-      justify-content: center;
-      padding: 4px;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .logo-mark::before {
-      content: "";
-      position: absolute;
-      inset: 18% 10%;
-      border-radius: 2px;
-      box-shadow: 0 0 0 2px var(--accent-soft);
-    }
-
-    .logo-mark-inner {
-      width: 80%;
-      height: 24px;
-      background: linear-gradient(
-        135deg,
-        #fefefe,
-        #d2d5dd 45%,
-        #b6bac6 100%
-      );
-      border-radius: 2px;
-    }
-
     .logo-text-title {
-      font-size: 1.1rem;
-      font-weight: 700;
-      letter-spacing: 0.08em;
+      font-size: 1.4rem;
+      font-weight: 900;
+      letter-spacing: 0.05em;
       text-transform: uppercase;
     }
 
     .logo-text-sub {
-      font-size: 0.78rem;
+      font-size: 0.8rem;
+      letter-spacing: 0.15em;
       text-transform: uppercase;
-      color: var(--muted);
-      letter-spacing: 0.22em;
-    }
-
-    .header-cta {
-      display: flex;
-      gap: 12px;
-      font-size: 0.85rem;
-      flex-wrap: wrap;
-      justify-content: flex-end;
+      color: var(--text-muted);
     }
 
     .pill {
-      padding: 8px 14px;
+      padding: 8px 16px;
       border-radius: 999px;
       border: 1px solid var(--border);
-      background: rgba(8, 9, 13, 0.6);
-      color: var(--muted);
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
+      background: #ffffff;
+      font-size: 0.85rem;
       white-space: nowrap;
     }
 
     .pill--accent {
       border-color: var(--accent);
       color: var(--accent);
-      background: rgba(245, 196, 81, 0.08);
+      background: var(--accent-soft);
+      font-weight: 600;
+    }
+
+    .top-strip {
+      margin-top: 10px;
+      color: var(--text-muted);
+      font-size: 0.8rem;
     }
 
     /* HERO */
     .hero-shell {
-      border-radius: 22px;
-      border: 1px solid var(--border);
-      overflow: hidden;
-      margin-bottom: 32px;
-      background: radial-gradient(circle at top left, #2a303e 0, #141721 65%);
-    }
-
-    .hero {
-      display: grid;
-      grid-template-columns: minmax(0, 3fr) minmax(260px, 2.5fr);
-      gap: 26px;
-      padding: 26px 22px 22px;
-      position: relative;
-    }
-
-    .hero::before {
-      /* soft image overlay band on the right for a Cali-Bamboo-ish vibe */
-      content: "";
-      position: absolute;
-      inset: 0;
-      opacity: 0.18;
-      background-image: url("https://via.placeholder.com/1200x700?text=Vinyl+Floor+Hero");
-      background-size: cover;
-      background-position: center;
-      pointer-events: none;
-    }
-
-    .hero > * {
-      position: relative;
-      z-index: 1;
+      margin-top: 20px;
+      border-radius: 24px;
+      background: #ffffff;
+      box-shadow: var(--shadow-soft);
+      padding: 30px;
     }
 
     .hero-heading {
-      font-size: clamp(2.1rem, 4vw, 2.7rem);
-      font-weight: 800;
-      letter-spacing: 0.03em;
-      text-transform: uppercase;
+      font-size: clamp(2.2rem, 4vw, 3rem);
+      font-weight: 900;
+      color: #1b1b1b;
     }
 
-    .hero-heading span {
-      color: var(--accent);
-    }
+    .hero-heading span { color: var(--accent); }
 
     .hero-slogan {
-      margin-top: 10px;
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-
-    .hero-slogan span {
-      color: var(--accent);
+      font-size: 1rem;
+      margin-top: 8px;
+      color: var(--text-muted);
     }
 
     .hero-actions {
+      margin-top: 18px;
       display: flex;
-      flex-wrap: wrap;
       gap: 12px;
-      margin-top: 22px;
+      flex-wrap: wrap;
     }
 
     .btn {
-      border: none;
       border-radius: 999px;
-      padding: 12px 22px;
-      font-size: 0.95rem;
+      padding: 12px 26px;
       font-weight: 600;
       cursor: pointer;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
+      border: none;
+      font-size: 1rem;
     }
 
     .btn-primary {
       background: var(--accent);
-      color: #18130a;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+      color: #fff;
+      box-shadow: var(--shadow-soft);
     }
 
     .btn-outline {
-      background: transparent;
+      background: #ffffff;
       border: 1px solid var(--border);
-      color: var(--muted);
+      color: var(--text-muted);
     }
 
-    .hero-note {
-      margin-top: 14px;
-      font-size: 0.8rem;
-      color: var(--muted);
-    }
-
-    .hero-card {
-      border-radius: 16px;
+    .hero-image {
+      width: 100%;
+      height: 300px;
+      max-height: 420px;
+      border-radius: 20px;
+      margin-top: 22px;
+      object-fit: cover;
       border: 1px solid var(--border);
-      background: radial-gradient(circle at top left, #2a303e 0, #141721 65%);
-      padding: 18px 18px 16px;
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-
-    .hero-card-title {
-      font-size: 0.9rem;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--muted);
-    }
-
-    .price-row {
-      display: flex;
-      align-items: baseline;
-      gap: 8px;
-    }
-
-    .price-main {
-      font-size: 2.1rem;
-      font-weight: 800;
-      color: var(--accent);
-    }
-
-    .price-unit {
-      font-size: 0.85rem;
-      color: var(--muted);
-      text-transform: uppercase;
-    }
-
-    .hero-card-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      background: rgba(103, 196, 139, 0.08);
-      color: var(--success);
-      border-radius: 999px;
-      padding: 4px 10px;
-      font-size: 0.7rem;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-    }
-
-    .hero-card-list {
-      font-size: 0.8rem;
-      color: var(--muted);
-      margin-top: 4px;
-      list-style: none;
-    }
-
-    .hero-card-list li {
-      margin-bottom: 4px;
-    }
-
-    .hero-card-foot {
-      margin-top: 6px;
-      font-size: 0.72rem;
-      color: var(--muted);
-      opacity: 0.8;
     }
 
     /* SECTIONS */
-    section {
-      margin-top: 36px;
-    }
-
     .section-title {
-      font-size: 1.2rem;
-      font-weight: 700;
-      margin-bottom: 16px;
+      margin-top: 50px;
+      margin-bottom: 14px;
+      font-size: 1.1rem;
       text-transform: uppercase;
-      letter-spacing: 0.12em;
-      color: var(--muted);
+      letter-spacing: 0.14em;
+      color: var(--text-muted);
     }
 
-    .section-grid-3 {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 16px;
-    }
-
-    .card {
-      background: var(--card);
-      border-radius: 14px;
-      border: 1px solid var(--border);
-      padding: 16px 16px 14px;
-      font-size: 0.9rem;
-    }
-
-    .card h3 {
-      font-size: 1rem;
-      margin-bottom: 6px;
-    }
-
-    .tagline {
-      font-size: 0.82rem;
-      color: var(--muted);
-      margin-top: 4px;
-    }
-
-    /* FEATURED FLOORS STRIP */
+    /* FEATURED FLOORS */
     .featured-strip {
-      margin-top: 10px;
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 12px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
     }
 
     .featured-item {
-      position: relative;
+      height: 200px;
       border-radius: 16px;
       overflow: hidden;
+      position: relative;
       border: 1px solid var(--border);
-      background: #11131a;
+      background: #f0f2f4;
+      box-shadow: var(--shadow-soft);
     }
 
     .featured-item img {
-      display: block;
       width: 100%;
-      height: 180px;
+      height: 100%;
       object-fit: cover;
-      filter: saturate(1.05);
-      transition: transform 0.35s ease, filter 0.35s ease;
     }
 
     .featured-label {
       position: absolute;
-      left: 10px;
       bottom: 10px;
-      padding: 4px 10px;
+      left: 10px;
+      background: rgba(0,0,0,0.6);
+      padding: 4px 12px;
       border-radius: 999px;
-      background: rgba(0, 0, 0, 0.6);
       font-size: 0.75rem;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-    }
-
-    .featured-item:hover img {
-      transform: scale(1.05);
-      filter: saturate(1.2);
-    }
-
-    /* SPECIALS */
-    .specials {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 18px;
-    }
-
-    .special {
-      background: linear-gradient(145deg, #252938, #181b24);
-      border-radius: 16px;
-      border: 1px solid var(--border);
-      padding: 16px 16px 14px;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .special-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 0.75rem;
-      text-transform: uppercase;
+      color: #ffffff;
       letter-spacing: 0.15em;
-      padding: 4px 10px;
-      border-radius: 999px;
-      border: 1px solid rgba(245, 196, 81, 0.35);
-      background: rgba(245, 196, 81, 0.06);
-      color: var(--accent);
-      margin-bottom: 8px;
+      text-transform: uppercase;
     }
 
-    .special h3 {
-      font-size: 1.1rem;
-      margin-bottom: 2px;
-    }
-
-    .special-main {
-      font-size: 1.6rem;
-      font-weight: 800;
-      margin: 4px 0;
-    }
-
-    .special-note {
-      font-size: 0.8rem;
-      color: var(--muted);
-    }
-
-    .special-foot {
-      font-size: 0.75rem;
-      color: var(--muted);
-      margin-top: 10px;
-      opacity: 0.8;
-    }
-
-    .badge-alt {
-      border-color: rgba(103, 196, 139, 0.4);
-      color: var(--success);
-      background: rgba(103, 196, 139, 0.08);
-    }
-
-    /* INSPIRATION GALLERY */
+    /* GALLERY */
     .gallery-grid {
       display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
+      grid-template-columns: repeat(4, 1fr);
       gap: 10px;
     }
 
     .gallery-item {
-      position: relative;
-      border-radius: 12px;
+      height: 160px;
+      border-radius: 14px;
       overflow: hidden;
       border: 1px solid var(--border);
-      background: #10121a;
+      background: #f1f3f6;
     }
 
     .gallery-item img {
-      display: block;
       width: 100%;
-      height: 150px;
+      height: 100%;
       object-fit: cover;
-      transition: transform 0.35s ease, filter 0.35s ease;
     }
 
     .gallery-item span {
       position: absolute;
-      left: 8px;
       bottom: 8px;
-      padding: 3px 8px;
+      left: 8px;
+      background: rgba(0,0,0,0.55);
+      color: #fff;
+      padding: 3px 10px;
       border-radius: 999px;
-      background: rgba(0, 0, 0, 0.55);
       font-size: 0.7rem;
       letter-spacing: 0.1em;
       text-transform: uppercase;
     }
 
-    .gallery-item:hover img {
-      transform: scale(1.07);
-      filter: brightness(1.05);
-    }
-
-    /* HOW IT WORKS / CONTACT */
-    .how-grid {
-      display: grid;
-      grid-template-columns: minmax(0, 3fr) minmax(0, 2.5fr);
-      gap: 22px;
-    }
-
-    .steps {
-      list-style: none;
-      padding-left: 0;
-      font-size: 0.9rem;
-      counter-reset: step;
-    }
-
-    .steps li {
-      margin-bottom: 10px;
-      padding-left: 26px;
-      position: relative;
-    }
-
-    .steps li::before {
-      content: counter(step);
-      counter-increment: step;
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 18px;
-      height: 18px;
-      border-radius: 999px;
-      border: 1px solid var(--accent);
-      font-size: 0.7rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--accent);
-    }
-
-    .contact-card {
-      background: var(--card);
-      border-radius: 16px;
-      border: 1px solid var(--border);
-      padding: 16px;
-      font-size: 0.9rem;
-    }
-
-    .contact-card h3 {
-      font-size: 1rem;
-      margin-bottom: 8px;
-    }
-
-    .contact-row {
-      margin-bottom: 10px;
-    }
-
-    .contact-row strong {
-      display: inline-block;
-      width: 70px;
-      color: var(--muted);
-      font-size: 0.8rem;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-    }
-
-    form {
-      margin-top: 8px;
-      display: grid;
-      gap: 8px;
-    }
-
-    input,
-    textarea {
-      width: 100%;
-      background: #12151d;
-      border-radius: 10px;
-      border: 1px solid var(--border);
-      color: var(--text);
-      font: inherit;
-      padding: 8px 10px;
-      font-size: 0.85rem;
-    }
-
-    textarea {
-      min-height: 70px;
-      resize: vertical;
-    }
-
-    .small {
-      font-size: 0.75rem;
-      color: var(--muted);
-      margin-top: 4px;
-    }
-
     footer {
-      margin-top: 44px;
+      margin-top: 40px;
       padding-top: 16px;
       border-top: 1px solid var(--border);
-      font-size: 0.78rem;
-      color: var(--muted);
+      color: var(--text-muted);
+      font-size: 0.8rem;
       display: flex;
       justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-
-    /* RESPONSIVE */
-    @media (max-width: 840px) {
-      .hero {
-        grid-template-columns: 1fr;
-      }
-      .section-grid-3,
-      .specials,
-      .how-grid,
-      .featured-strip,
-      .gallery-grid {
-        grid-template-columns: 1fr;
-      }
-      header {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      .header-cta {
-        justify-content: flex-start;
-      }
-      .hero-card {
-        order: -1;
-      }
-      .hero::before {
-        opacity: 0.22;
-      }
-      .gallery-item img {
-        height: 190px;
-      }
-      .featured-item img {
-        height: 190px;
-      }
     }
   </style>
 </head>
 <body>
   <div class="page">
+
     <!-- HEADER -->
     <header>
       <div class="logo-wrap">
-        <div class="logo-mark">
-          <div class="logo-mark-inner"></div>
-        </div>
         <div>
           <div class="logo-text-title">Base Line Flooring</div>
-          <div class="logo-text-sub">vinyl • sd • installs</div>
+          <div class="logo-text-sub">vinyl • san diego • installs</div>
         </div>
       </div>
-      <div class="header-cta">
-        <div class="pill pill--accent">San Diego, CA</div>
-        <div class="pill">Call / Text: (555) 123-4567</div>
-      </div>
+      <div class="pill pill--accent">Call / Text: (619) 832-3874</div>
     </header>
 
-    <!-- HERO -->
-    <main>
-      <div class="hero-shell">
-        <section class="hero">
-          <div>
-            <h1 class="hero-heading">
-              Beautiful vinyl floors at the <span>bottom line</span> price.
-            </h1>
-            <p class="hero-slogan">
-              <span>0 overhead</span> • <span>no minimums</span> •
-              direct from <span>factory to home</span>.
-            </p>
-            <div class="hero-actions">
-              <button class="btn btn-primary">
-                Get a free in-home estimate →
-              </button>
-              <button class="btn btn-outline">Text us photos of your space</button>
-            </div>
-            <p class="hero-note">
-              All of our floors are premium
-              <strong>8&nbsp;mm vinyl plank with wear layer</strong> — tough enough
-              for rentals, pets, and family traffic.
-            </p>
-          </div>
+    <div class="top-strip">
+      Office & Showroom — 9:30am–6pm daily ·  
+      5640 Kearny Mesa Rd Ste O, San Diego, CA 92111
+    </div>
 
-          <aside class="hero-card">
-            <div class="hero-card-title">Limited-Time Vinyl Special</div>
-            <div class="price-row">
-              <div class="price-main">$5.00</div>
-              <div class="price-unit">per sq ft<br />materials + install</div>
-            </div>
-            <div class="hero-card-badge">
-              ✓ Free installation
-            </div>
-            <ul class="hero-card-list">
-              <li>8&nbsp;mm click-lock vinyl plank</li>
-              <li>Standard underlayment included</li>
-              <li>Basic removal of carpet / laminate</li>
-              <li>Perfect for whole-home refreshes & rentals</li>
-            </ul>
-            <div class="hero-card-foot">
-              Stairs, leveling, custom trim and specialty work quoted separately.
-              Offer valid while supplies last.
-            </div>
-          </aside>
-        </section>
+    <!-- HERO -->
+    <div class="hero-shell">
+      <h1 class="hero-heading">
+        Beautiful vinyl floors at the <span>bottom line</span> price.
+      </h1>
+
+      <p class="hero-slogan">
+        <strong>0 overhead • no minimums • direct from factory to home</strong>
+      </p>
+
+      <div class="hero-actions">
+        <button class="btn btn-primary">Get a Free Estimate →</button>
+        <button class="btn btn-outline">Text Us Photos of Your Space</button>
       </div>
 
-      <!-- FEATURED FLOORS STRIP (Cali Bamboo–style visuals) -->
-      <section>
-        <h2 class="section-title">Featured Vinyl Looks</h2>
-        <div class="featured-strip">
-          <div class="featured-item">
-            <img src="https://via.placeholder.com/600x400?text=Coastal+Oak+Vinyl" alt="Coastal oak vinyl flooring in living room" />
-            <div class="featured-label">Coastal Oak</div>
-          </div>
-          <div class="featured-item">
-            <img src="https://via.placeholder.com/600x400?text=Modern+Gray+Vinyl" alt="Modern gray vinyl flooring in open concept space" />
-            <div class="featured-label">Modern Gray</div>
-          </div>
-          <div class="featured-item">
-            <img src="https://via.placeholder.com/600x400?text=Warm+Walnut+Vinyl" alt="Warm walnut vinyl flooring in bedroom" />
-            <div class="featured-label">Warm Walnut</div>
-          </div>
-        </div>
-      </section>
+      <!-- YOUR AI-GENERATED IMAGE -->
+      <img 
+        class="hero-image" 
+        src="living-room-coastal-oak.jpg" 
+        alt="Coastal Oak vinyl flooring in bright modern living room"
+      >
+    </div>
 
-      <!-- WHY US -->
-      <section>
-        <h2 class="section-title">Why Base Line Flooring</h2>
-        <div class="section-grid-3">
-          <div class="card">
-            <h3>0 Overhead Pricing</h3>
-            <p class="tagline">
-              No showroom, no front desk, no middleman markup.
-            </p>
-            <ul>
-              <li>You pay for materials + labor — that’s it.</li>
-              <li>We bring samples to your home.</li>
-              <li>Transparent, written quotes.</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>All-Vinyl, All 8&nbsp;mm</h3>
-            <p class="tagline">We keep it simple and durable.</p>
-            <ul>
-              <li>8&nbsp;mm click-lock vinyl plank only.</li>
-              <li>Water-resistant & scratch-resistant.</li>
-              <li>Perfect for pets, kids, and high traffic.</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>Local & Reliable</h3>
-            <p class="tagline">Serving San Diego homeowners & landlords.</p>
-            <ul>
-              <li>Ideal for rentals, flips & ADUs.</li>
-              <li>Clean, fast, professional installs.</li>
-              <li>Respect for your time and your space.</li>
-            </ul>
-          </div>
-        </div>
-      </section>
+    <!-- FEATURED -->
+    <h2 class="section-title">Featured Vinyl Looks</h2>
+    <div class="featured-strip">
+      <div class="featured-item">
+        <img src="living-room-coastal-oak.jpg" alt="Coastal Oak Vinyl">
+        <div class="featured-label">Coastal Oak</div>
+      </div>
 
-      <!-- SPECIALS -->
-      <section>
-        <h2 class="section-title">Current Specials</h2>
-        <div class="specials">
-          <div class="special">
-            <div class="special-badge">All-Inclusive Vinyl Deal</div>
-            <h3>Whole-Home Vinyl Special</h3>
-            <div class="special-main">$5.00 / sq ft</div>
-            <p class="special-note">
-              Includes 8&nbsp;mm vinyl plank, standard underlayment and
-              <strong>free professional installation</strong>.
-            </p>
-            <ul>
-              <li>Perfect for move-in ready makeovers.</li>
-              <li>Ideal for rental turns & flips.</li>
-              <li>Minimum square footage may apply.</li>
-            </ul>
-            <p class="special-foot">
-              Stairs, floor leveling, moisture barriers, custom transitions and
-              specialty trim are extra. Full details in written quote.
-            </p>
-          </div>
+      <div class="featured-item">
+        <img src="https://via.placeholder.com/600x400?text=Modern+Gray+Vinyl">
+        <div class="featured-label">Modern Gray</div>
+      </div>
 
-          <div class="special">
-            <div class="special-badge badge-alt">DIY / Installer Special</div>
-            <h3>Half-Off Materials Only</h3>
-            <div class="special-main">50% OFF</div>
-            <p class="special-note">
-              <strong>All in-stock vinyl flooring 50% off</strong> when you
-              handle installation yourself.
-            </p>
-            <ul>
-              <li>Same 8&nbsp;mm wear-layer vinyl.</li>
-              <li>Great if you already have an installer.</li>
-              <li>Perfect for single rooms & small projects.</li>
-            </ul>
-            <p class="special-foot">
-              Discount applies to materials only. Installation, delivery and
-              add-ons quoted separately.
-            </p>
-          </div>
-        </div>
-      </section>
+      <div class="featured-item">
+        <img src="https://via.placeholder.com/600x400?text=Warm+Walnut+Vinyl">
+        <div class="featured-label">Warm Walnut</div>
+      </div>
+    </div>
 
-      <!-- INSPIRATION GALLERY -->
-      <section>
-        <h2 class="section-title">Room Inspiration</h2>
-        <div class="gallery-grid">
-          <div class="gallery-item">
-            <img src="https://via.placeholder.com/500x350?text=Living+Room+Vinyl" alt="Vinyl flooring in styled living room" />
-            <span>Living Room</span>
-          </div>
-          <div class="gallery-item">
-            <img src="https://via.placeholder.com/500x350?text=Kitchen+Vinyl" alt="Vinyl flooring in modern kitchen" />
-            <span>Kitchen</span>
-          </div>
-          <div class="gallery-item">
-            <img src="https://via.placeholder.com/500x350?text=Bedroom+Vinyl" alt="Vinyl flooring in cozy bedroom" />
-            <span>Bedroom</span>
-          </div>
-          <div class="gallery-item">
-            <img src="https://via.placeholder.com/500x350?text=Rental+Unit+Vinyl" alt="Vinyl flooring in rental or ADU" />
-            <span>Rental / ADU</span>
-          </div>
-        </div>
-      </section>
-
-      <!-- HOW IT WORKS / CONTACT -->
-      <section>
-        <h2 class="section-title">How It Works</h2>
-        <div class="how-grid">
-          <div>
-            <ol class="steps">
-              <li>
-                <strong>Call, text or submit the form.</strong><br />
-                Share your approximate square footage and a couple photos of
-                your current floors.
-              </li>
-              <li>
-                <strong>We bring samples to your home.</strong><br />
-                See colors in your actual lighting — no guessing from a
-                showroom.
-              </li>
-              <li>
-                <strong>Get a clear, written quote.</strong><br />
-                Materials, labor and any extras broken out so you know exactly
-                what you’re paying for.
-              </li>
-              <li>
-                <strong>Install day.</strong><br />
-                We remove old flooring, prep the surface and install new vinyl
-                with clean edges and transitions.
-              </li>
-            </ol>
-          </div>
-          <div class="contact-card">
-            <h3>Request a Free Estimate</h3>
-            <div class="contact-row">
-              <strong>Phone</strong> (555) 123-4567
-            </div>
-            <div class="contact-row">
-              <strong>Email</strong> hello@baselineflooring.com
-            </div>
-            <div class="contact-row">
-              <strong>Service</strong> Greater San Diego, CA
-            </div>
-            <form>
-              <input type="text" placeholder="Name" />
-              <input type="tel" placeholder="Phone" />
-              <input type="email" placeholder="Email" />
-              <input type="text" placeholder="City / Neighborhood" />
-              <textarea
-                placeholder="Tell us about your project (approx. sq ft, rooms, timing)..."
-              ></textarea>
-              <button type="submit" class="btn btn-primary">
-                Send request
-              </button>
-              <div class="small">
-                You can also text photos of your space to
-                <strong>(555) 123-4567</strong> for a faster ballpark quote.
-              </div>
-            </form>
-          </div>
-        </div>
-      </section>
-    </main>
+    <!-- GALLERY -->
+    <h2 class="section-title">Room Inspiration</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="living-room-coastal-oak.jpg">
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/500x350?text=Kitchen+Vinyl">
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/500x350?text=Bedroom+Vinyl">
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/500x350?text=Rental+Unit+Vinyl">
+      </div>
+    </div>
 
     <footer>
-      <div>© <span id="year"></span> Base Line Flooring. All rights reserved.</div>
-      <div>0 overhead • no minimums • direct from factory to home</div>
+      © <span id="year"></span> Base Line Flooring  
+      <div>0 overhead • no minimums • factory direct</div>
     </footer>
   </div>
 
@@ -867,586 +326,327 @@
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
-</html>  white-space: nowrap;
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Base Line Flooring | Vinyl Floors at Bottom Line Pricing</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Base Line Flooring offers premium 8mm vinyl plank flooring in San Diego with 0 overhead, no minimums, and factory-direct pricing. $5/sq ft special with free installation or 50% off materials. Visit our Kearny Mesa showroom.">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --bg-alt: #ffffff;
+      --accent: #2a9a63;
+      --accent-soft: rgba(42,154,99,0.1);
+      --text-main: #22252a;
+      --text-muted: #6c7480;
+      --border: #e3e7eb;
+      --shadow-soft: 0 10px 30px rgba(15, 23, 42, 0.05);
+      --font-main: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: var(--font-main);
+      background: var(--bg);
+      color: var(--text-main);
+      line-height: 1.5;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    .page {
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 24px 16px 64px;
+    }
+
+    /* HEADER */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 0 6px;
+      gap: 20px;
+    }
+
+    .logo-wrap {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo-text-title {
+      font-size: 1.4rem;
+      font-weight: 900;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .logo-text-sub {
+      font-size: 0.8rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+
+    .pill {
+      padding: 8px 16px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: #ffffff;
+      font-size: 0.85rem;
+      white-space: nowrap;
     }
 
     .pill--accent {
       border-color: var(--accent);
       color: var(--accent);
-      background: rgba(245, 196, 81, 0.08);
+      background: var(--accent-soft);
+      font-weight: 600;
+    }
+
+    .top-strip {
+      margin-top: 10px;
+      color: var(--text-muted);
+      font-size: 0.8rem;
     }
 
     /* HERO */
-    .hero {
-      display: grid;
-      grid-template-columns: minmax(0, 3fr) minmax(260px, 2.5fr);
-      gap: 26px;
-      margin-bottom: 40px;
+    .hero-shell {
+      margin-top: 20px;
+      border-radius: 24px;
+      background: #ffffff;
+      box-shadow: var(--shadow-soft);
+      padding: 30px;
     }
 
     .hero-heading {
-      font-size: clamp(2.1rem, 4vw, 2.7rem);
-      font-weight: 800;
-      letter-spacing: 0.03em;
-      text-transform: uppercase;
+      font-size: clamp(2.2rem, 4vw, 3rem);
+      font-weight: 900;
+      color: #1b1b1b;
     }
 
-    .hero-heading span {
-      color: var(--accent);
-    }
+    .hero-heading span { color: var(--accent); }
 
     .hero-slogan {
-      margin-top: 10px;
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-
-    .hero-slogan span {
-      color: var(--accent);
+      font-size: 1rem;
+      margin-top: 8px;
+      color: var(--text-muted);
     }
 
     .hero-actions {
+      margin-top: 18px;
       display: flex;
-      flex-wrap: wrap;
       gap: 12px;
-      margin-top: 22px;
+      flex-wrap: wrap;
     }
 
     .btn {
-      border: none;
       border-radius: 999px;
-      padding: 12px 22px;
-      font-size: 0.95rem;
+      padding: 12px 26px;
       font-weight: 600;
       cursor: pointer;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
+      border: none;
+      font-size: 1rem;
     }
 
     .btn-primary {
       background: var(--accent);
-      color: #18130a;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+      color: #fff;
+      box-shadow: var(--shadow-soft);
     }
 
     .btn-outline {
-      background: transparent;
+      background: #ffffff;
       border: 1px solid var(--border);
-      color: var(--muted);
+      color: var(--text-muted);
     }
 
-    .hero-note {
-      margin-top: 14px;
-      font-size: 0.8rem;
-      color: var(--muted);
-    }
-
-    .hero-card {
-      border-radius: 16px;
+    .hero-image {
+      width: 100%;
+      height: 300px;
+      max-height: 420px;
+      border-radius: 20px;
+      margin-top: 22px;
+      object-fit: cover;
       border: 1px solid var(--border);
-      background: radial-gradient(circle at top left, #2a303e 0, #141721 65%);
-      padding: 18px 18px 16px;
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-
-    .hero-card-title {
-      font-size: 0.9rem;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--muted);
-    }
-
-    .price-row {
-      display: flex;
-      align-items: baseline;
-      gap: 8px;
-    }
-
-    .price-main {
-      font-size: 2.1rem;
-      font-weight: 800;
-      color: var(--accent);
-    }
-
-    .price-unit {
-      font-size: 0.85rem;
-      color: var(--muted);
-      text-transform: uppercase;
-    }
-
-    .hero-card-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      background: rgba(103, 196, 139, 0.08);
-      color: var(--success);
-      border-radius: 999px;
-      padding: 4px 10px;
-      font-size: 0.7rem;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-    }
-
-    .hero-card-list {
-      font-size: 0.8rem;
-      color: var(--muted);
-      margin-top: 4px;
-      list-style: none;
-    }
-
-    .hero-card-list li {
-      margin-bottom: 4px;
-    }
-
-    .hero-card-foot {
-      margin-top: 6px;
-      font-size: 0.72rem;
-      color: var(--muted);
-      opacity: 0.8;
     }
 
     /* SECTIONS */
-    section {
-      margin-top: 36px;
-    }
-
     .section-title {
-      font-size: 1.2rem;
-      font-weight: 700;
-      margin-bottom: 16px;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      color: var(--muted);
-    }
-
-    .section-grid-3 {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 16px;
-    }
-
-    .card {
-      background: var(--card);
-      border-radius: 14px;
-      border: 1px solid var(--border);
-      padding: 16px 16px 14px;
-      font-size: 0.9rem;
-    }
-
-    .card h3 {
-      font-size: 1rem;
-      margin-bottom: 6px;
-    }
-
-    .tagline {
-      font-size: 0.82rem;
-      color: var(--muted);
-      margin-top: 4px;
-    }
-
-    ul {
-      padding-left: 18px;
-      margin-top: 6px;
-    }
-
-    li {
-      margin-bottom: 4px;
-    }
-
-    .specials {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 18px;
-    }
-
-    .special {
-      background: linear-gradient(145deg, #252938, #181b24);
-      border-radius: 16px;
-      border: 1px solid var(--border);
-      padding: 16px 16px 14px;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .special-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-      padding: 4px 10px;
-      border-radius: 999px;
-      border: 1px solid rgba(245, 196, 81, 0.35);
-      background: rgba(245, 196, 81, 0.06);
-      color: var(--accent);
-      margin-bottom: 8px;
-    }
-
-    .special h3 {
+      margin-top: 50px;
+      margin-bottom: 14px;
       font-size: 1.1rem;
-      margin-bottom: 2px;
-    }
-
-    .special-main {
-      font-size: 1.6rem;
-      font-weight: 800;
-      margin: 4px 0;
-    }
-
-    .special-note {
-      font-size: 0.8rem;
-      color: var(--muted);
-    }
-
-    .special-foot {
-      font-size: 0.75rem;
-      color: var(--muted);
-      margin-top: 10px;
-      opacity: 0.8;
-    }
-
-    .badge-alt {
-      border-color: rgba(103, 196, 139, 0.4);
-      color: var(--success);
-      background: rgba(103, 196, 139, 0.08);
-    }
-
-    /* HOW IT WORKS / CONTACT */
-    .how-grid {
-      display: grid;
-      grid-template-columns: minmax(0, 3fr) minmax(0, 2.5fr);
-      gap: 22px;
-    }
-
-    .steps {
-      list-style: none;
-      padding-left: 0;
-      font-size: 0.9rem;
-    }
-
-    .steps li {
-      margin-bottom: 10px;
-      padding-left: 26px;
-      position: relative;
-    }
-
-    .steps li::before {
-      content: counter(step);
-      counter-increment: step;
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 18px;
-      height: 18px;
-      border-radius: 999px;
-      border: 1px solid var(--accent);
-      font-size: 0.7rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--accent);
-    }
-
-    .contact-card {
-      background: var(--card);
-      border-radius: 16px;
-      border: 1px solid var(--border);
-      padding: 16px;
-      font-size: 0.9rem;
-    }
-
-    .contact-card h3 {
-      font-size: 1rem;
-      margin-bottom: 8px;
-    }
-
-    .contact-row {
-      margin-bottom: 10px;
-    }
-
-    .contact-row strong {
-      display: inline-block;
-      width: 70px;
-      color: var(--muted);
-      font-size: 0.8rem;
       text-transform: uppercase;
-      letter-spacing: 0.12em;
+      letter-spacing: 0.14em;
+      color: var(--text-muted);
     }
 
-    form {
-      margin-top: 8px;
+    /* FEATURED FLOORS */
+    .featured-strip {
       display: grid;
-      gap: 8px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
     }
 
-    input,
-    textarea {
-      width: 100%;
-      background: #12151d;
-      border-radius: 10px;
+    .featured-item {
+      height: 200px;
+      border-radius: 16px;
+      overflow: hidden;
+      position: relative;
       border: 1px solid var(--border);
-      color: var(--text);
-      font: inherit;
-      padding: 8px 10px;
-      font-size: 0.85rem;
+      background: #f0f2f4;
+      box-shadow: var(--shadow-soft);
     }
 
-    textarea {
-      min-height: 70px;
-      resize: vertical;
+    .featured-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
 
-    .small {
+    .featured-label {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      background: rgba(0,0,0,0.6);
+      padding: 4px 12px;
+      border-radius: 999px;
       font-size: 0.75rem;
-      color: var(--muted);
-      margin-top: 4px;
+      color: #ffffff;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+
+    /* GALLERY */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+
+    .gallery-item {
+      height: 160px;
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      background: #f1f3f6;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .gallery-item span {
+      position: absolute;
+      bottom: 8px;
+      left: 8px;
+      background: rgba(0,0,0,0.55);
+      color: #fff;
+      padding: 3px 10px;
+      border-radius: 999px;
+      font-size: 0.7rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
     }
 
     footer {
-      margin-top: 44px;
+      margin-top: 40px;
       padding-top: 16px;
       border-top: 1px solid var(--border);
-      font-size: 0.78rem;
-      color: var(--muted);
+      color: var(--text-muted);
+      font-size: 0.8rem;
       display: flex;
       justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-
-    /* RESPONSIVE */
-    @media (max-width: 840px) {
-      .hero,
-      .section-grid-3,
-      .specials,
-      .how-grid {
-        grid-template-columns: 1fr;
-      }
-      header {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      .header-cta {
-        justify-content: flex-start;
-      }
-      .hero-card {
-        order: -1;
-      }
     }
   </style>
 </head>
 <body>
   <div class="page">
+
     <!-- HEADER -->
     <header>
       <div class="logo-wrap">
-        <div class="logo-mark">
-          <div class="logo-mark-inner"></div>
-        </div>
         <div>
           <div class="logo-text-title">Base Line Flooring</div>
-          <div class="logo-text-sub">vinyl • sd • installs</div>
+          <div class="logo-text-sub">vinyl • san diego • installs</div>
         </div>
       </div>
-      <div class="header-cta">
-        <div class="pill pill--accent">San Diego, CA</div>
-        <div class="pill">Call / Text: (555) 123-4567</div>
-      </div>
+      <div class="pill pill--accent">Call / Text: (619) 832-3874</div>
     </header>
 
+    <div class="top-strip">
+      Office & Showroom — 9:30am–6pm daily ·  
+      5640 Kearny Mesa Rd Ste O, San Diego, CA 92111
+    </div>
+
     <!-- HERO -->
-    <main>
-      <section class="hero">
-        <div>
-          <h1 class="hero-heading">
-            Vinyl floors at the <span>bottom line</span> price.
-          </h1>
-          <p class="hero-slogan">
-            <span>0 overhead</span> • <span>no minimums</span> •
-            direct from <span>factory to home</span>.
-          </p>
-          <div class="hero-actions">
-            <button class="btn btn-primary">
-              Get a free in-home estimate →
-            </button>
-            <button class="btn btn-outline">Text us photos of your space</button>
-          </div>
-          <p class="hero-note">
-            All of our floors are premium
-            <strong>8&nbsp;mm vinyl plank with wear layer</strong> — tough enough
-            for rentals, pets, and family traffic.
-          </p>
-        </div>
+    <div class="hero-shell">
+      <h1 class="hero-heading">
+        Beautiful vinyl floors at the <span>bottom line</span> price.
+      </h1>
 
-        <aside class="hero-card">
-          <div class="hero-card-title">Limited-Time Vinyl Special</div>
-          <div class="price-row">
-            <div class="price-main">$5.00</div>
-            <div class="price-unit">per sq ft<br />materials + install</div>
-          </div>
-          <div class="hero-card-badge">
-            ✓ Free installation
-          </div>
-          <ul class="hero-card-list">
-            <li>8&nbsp;mm click-lock vinyl plank</li>
-            <li>Standard underlayment included</li>
-            <li>Basic removal of carpet / laminate</li>
-            <li>Perfect for whole-home refreshes & rentals</li>
-          </ul>
-          <div class="hero-card-foot">
-            Stairs, leveling, custom trim and specialty work quoted separately.
-            Offer valid while supplies last.
-          </div>
-        </aside>
-      </section>
+      <p class="hero-slogan">
+        <strong>0 overhead • no minimums • direct from factory to home</strong>
+      </p>
 
-      <!-- WHY US -->
-      <section>
-        <h2 class="section-title">Why Base Line Flooring</h2>
-        <div class="section-grid-3">
-          <div class="card">
-            <h3>0 Overhead Pricing</h3>
-            <p class="tagline">
-              No showroom, no front desk, no middleman markup.
-            </p>
-            <ul>
-              <li>You pay for materials + labor — that’s it.</li>
-              <li>We bring samples to your home.</li>
-              <li>Transparent, written quotes.</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>All-Vinyl, All 8&nbsp;mm</h3>
-            <p class="tagline">We keep it simple and durable.</p>
-            <ul>
-              <li>8&nbsp;mm click-lock vinyl plank only.</li>
-              <li>Water-resistant & scratch-resistant.</li>
-              <li>Perfect for pets, kids, and high traffic.</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>Local & Reliable</h3>
-            <p class="tagline">Serving San Diego homeowners & landlords.</p>
-            <ul>
-              <li>Ideal for rentals, flips & ADUs.</li>
-              <li>Clean, fast, professional installs.</li>
-              <li>Respect for your time and your space.</li>
-            </ul>
-          </div>
-        </div>
-      </section>
+      <div class="hero-actions">
+        <button class="btn btn-primary">Get a Free Estimate →</button>
+        <button class="btn btn-outline">Text Us Photos of Your Space</button>
+      </div>
 
-      <!-- SPECIALS -->
-      <section>
-        <h2 class="section-title">Current Specials</h2>
-        <div class="specials">
-          <div class="special">
-            <div class="special-badge">All-Inclusive Vinyl Deal</div>
-            <h3>Whole-Home Vinyl Special</h3>
-            <div class="special-main">$5.00 / sq ft</div>
-            <p class="special-note">
-              Includes 8&nbsp;mm vinyl plank, standard underlayment and
-              <strong>free professional installation</strong>.
-            </p>
-            <ul>
-              <li>Perfect for move-in ready makeovers.</li>
-              <li>Ideal for rental turns & flips.</li>
-              <li>Minimum square footage may apply.</li>
-            </ul>
-            <p class="special-foot">
-              Stairs, floor leveling, moisture barriers, custom transitions and
-              specialty trim are extra. Full details in written quote.
-            </p>
-          </div>
+      <!-- YOUR AI-GENERATED IMAGE -->
+      <img 
+        class="hero-image" 
+        src="living-room-coastal-oak.jpg" 
+        alt="Coastal Oak vinyl flooring in bright modern living room"
+      >
+    </div>
 
-          <div class="special">
-            <div class="special-badge badge-alt">DIY / Installer Special</div>
-            <h3>Half-Off Materials Only</h3>
-            <div class="special-main">50% OFF</div>
-            <p class="special-note">
-              <strong>All in-stock vinyl flooring 50% off</strong> when you
-              handle installation yourself.
-            </p>
-            <ul>
-              <li>Same 8&nbsp;mm wear-layer vinyl.</li>
-              <li>Great if you already have an installer.</li>
-              <li>Perfect for single rooms & small projects.</li>
-            </ul>
-            <p class="special-foot">
-              Discount applies to materials only. Installation, delivery and
-              add-ons quoted separately.
-            </p>
-          </div>
-        </div>
-      </section>
+    <!-- FEATURED -->
+    <h2 class="section-title">Featured Vinyl Looks</h2>
+    <div class="featured-strip">
+      <div class="featured-item">
+        <img src="living-room-coastal-oak.jpg" alt="Coastal Oak Vinyl">
+        <div class="featured-label">Coastal Oak</div>
+      </div>
 
-      <!-- HOW IT WORKS / CONTACT -->
-      <section>
-        <h2 class="section-title">How It Works</h2>
-        <div class="how-grid">
-          <div>
-            <ol class="steps">
-              <li>
-                <strong>Call, text or submit the form.</strong><br />
-                Share your approximate square footage and a couple photos of
-                your current floors.
-              </li>
-              <li>
-                <strong>We bring samples to your home.</strong><br />
-                See colors in your actual lighting — no guessing from a
-                showroom.
-              </li>
-              <li>
-                <strong>Get a clear, written quote.</strong><br />
-                Materials, labor and any extras broken out so you know exactly
-                what you’re paying for.
-              </li>
-              <li>
-                <strong>Install day.</strong><br />
-                We remove old flooring, prep the surface and install new vinyl
-                with clean edges and transitions.
-              </li>
-            </ol>
-          </div>
-          <div class="contact-card">
-            <h3>Request a Free Estimate</h3>
-            <div class="contact-row">
-              <strong>Phone</strong> (555) 123-4567
-            </div>
-            <div class="contact-row">
-              <strong>Email</strong> hello@baselineflooring.com
-            </div>
-            <div class="contact-row">
-              <strong>Service</strong> Greater San Diego, CA
-            </div>
-            <form>
-              <input type="text" placeholder="Name" />
-              <input type="tel" placeholder="Phone" />
-              <input type="email" placeholder="Email" />
-              <input type="text" placeholder="City / Neighborhood" />
-              <textarea
-                placeholder="Tell us about your project (approx. sq ft, rooms, timing)..."
-              ></textarea>
-              <button type="submit" class="btn btn-primary">
-                Send request
-              </button>
-              <div class="small">
-                You can also text photos of your space to
-                <strong>(555) 123-4567</strong> for a faster ballpark quote.
-              </div>
-            </form>
-          </div>
-        </div>
-      </section>
-    </main>
+      <div class="featured-item">
+        <img src="https://via.placeholder.com/600x400?text=Modern+Gray+Vinyl">
+        <div class="featured-label">Modern Gray</div>
+      </div>
+
+      <div class="featured-item">
+        <img src="https://via.placeholder.com/600x400?text=Warm+Walnut+Vinyl">
+        <div class="featured-label">Warm Walnut</div>
+      </div>
+    </div>
+
+    <!-- GALLERY -->
+    <h2 class="section-title">Room Inspiration</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="living-room-coastal-oak.jpg">
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/500x350?text=Kitchen+Vinyl">
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/500x350?text=Bedroom+Vinyl">
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/500x350?text=Rental+Unit+Vinyl">
+      </div>
+    </div>
 
     <footer>
-      <div>© <span id="year"></span> Base Line Flooring. All rights reserved.</div>
-      <div>0 overhead • no minimums • direct from factory to home</div>
+      © <span id="year"></span> Base Line Flooring  
+      <div>0 overhead • no minimums • factory direct</div>
     </footer>
   </div>
 
